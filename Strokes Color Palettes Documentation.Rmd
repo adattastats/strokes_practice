@@ -217,7 +217,7 @@ viz_palette(strokes_palettes$`the new abnormal`, na_name)
 ```
 
 
-#View all palettes at once
+# View all palettes at once
 
 ```{r, EVAL=TRUE}
 pal_names <- names(strokes_palettes)
@@ -230,6 +230,7 @@ for (i in 1:length(strokes_palettes)){
 
 
 ## Color by discrete variable using default palette ("is this it")
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
@@ -238,6 +239,7 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 ```
 
 ## Color by discrete variable using "room on fire" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
@@ -251,13 +253,14 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
-    scale_color_strokes(palette="first impressions of earth")
+    scale_color_strokes(palette = "first impressions of earth")
 
 ```
 
 
 
 ## Color by discrete variable using "angles" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
@@ -268,6 +271,7 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 
 
 ## Color by discrete variable using "comedown machine" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
@@ -278,13 +282,16 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
 
 
 ## Color by discrete variable using "future past present" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
     scale_color_strokes(palette = "future past present")
 
 ```
+
 ## Color by discrete variable using "the new abnormal" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
     geom_point(size = 4) +
@@ -300,37 +307,49 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     geom_point(size = 4, alpha = .6) +
     scale_color_strokes(discrete = FALSE)
 ```
+
 ## Color by numeric variable with "room on fire" palette 
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     geom_point(size = 4, alpha = .6) +
     scale_color_strokes(discrete = FALSE, palette = "room on fire" )
 ```
+
 ## Color by numeric variable with "first impressions of earth" palette 
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     geom_point(size = 4, alpha = .6) +
     scale_color_strokes(discrete = FALSE, palette = "first impressions of earth" )
 ```
-## Color by numeric variable with "first impressions of earth" palette 
+
+## Color by numeric variable with "first impressions of earth" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     geom_point(size = 4, alpha = .6) +
     scale_color_strokes(discrete = FALSE, palette = "angles" )
 ```
+
 ## Color by numeric variable with "comedown machine" palette 
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     geom_point(size = 4, alpha = .6) +
     scale_color_strokes(discrete = FALSE, palette = "comedown machine" )
 ```
+
 ## Color by numeric variable with "future past present" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     geom_point(size = 4, alpha = .6) +
     scale_color_strokes(discrete = FALSE, palette = "future past present" )
 ```
+
 ## Color by numeric variable with "the new abnormal" palette
+
 ```{r, EVAL=TRUE}
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     geom_point(size = 4, alpha = .6) +
@@ -338,13 +357,16 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
 ```
 
 ## Fill by discrete variable with "is this it" palette
+
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_strokes(palette = "is this it", guide = "none")
 ```
+
 ## Fill by discrete variable with "room on fire" palette
+
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
@@ -353,13 +375,16 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 ```
 
 ## Fill by discrete variable with "angles" palette
+
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_strokes(palette = "angles", guide = "none")
 ```
+
 ## Fill by discrete variable with "comedown machine" palette
+
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
@@ -368,13 +393,16 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
 ```
 
 ## Fill by discrete variable with "future past present" palette
+
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_strokes(palette = "future past present", guide = "none")
 ```
+
 ## Fill by discrete variable with "the new abnormal" palette
+
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
