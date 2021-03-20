@@ -146,7 +146,7 @@ scale_fill_strokes <- function(palette = "is this it", discrete = TRUE, reverse 
 ```
 
 
-## View "is this it" colors by hex number 
+# View "is this it" colors by hex number 
 ```{r, EVAL=TRUE}
 strokes_palettes[["is this it"]] %>%
   tibble(x=.) %>%
@@ -161,7 +161,7 @@ strokes_palettes[["is this it"]] %>%
         panel.grid = element_blank())
 ```
 
-## Function to visualize palette
+# Function to visualize palette
 ```{r, EVAL=TRUE}
 viz_palette <- function(pal, ttl = deparse(substitute(pal)), num = length(pal)) {
     if(num <= 0)
@@ -337,14 +337,14 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
     scale_color_strokes(discrete = FALSE, palette = "the new abnormal")
 ```
 
-##Fill by discrete variable with "is this it" palette
+## Fill by discrete variable with "is this it" palette
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_strokes(palette = "is this it", guide = "none")
 ```
-##Fill by discrete variable with "room on fire" palette
+## Fill by discrete variable with "room on fire" palette
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
@@ -352,14 +352,14 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     scale_fill_strokes(palette = "room on fire", guide = "none")
 ```
 
-##Fill by discrete variable with "angles" palette
+## Fill by discrete variable with "angles" palette
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_strokes(palette = "angles", guide = "none")
 ```
-##Fill by discrete variable with "comedown machine" palette
+## Fill by discrete variable with "comedown machine" palette
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
@@ -367,14 +367,14 @@ ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     scale_fill_strokes(palette = "comedown machine", guide = "none")
 ```
 
-##Fill by discrete variable with "future past present" palette
+## Fill by discrete variable with "future past present" palette
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     scale_fill_strokes(palette = "future past present", guide = "none")
 ```
-##Fill by discrete variable with "the new abnormal" palette
+## Fill by discrete variable with "the new abnormal" palette
 ```{r, EVAL=TRUE}
 ggplot(mpg, aes(manufacturer, fill = manufacturer)) +
     geom_bar() +
