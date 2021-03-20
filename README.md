@@ -1,2 +1,3 @@
 # strokes_practice
-All the code for my strokes color palettes
+Color Palettes inspired by Strokes albums
+Includs palettes for Is This It, Room on Fire, First Impressions on Earth, Angles, Comedown Machine, Future Past Present, and The New Abonormal
