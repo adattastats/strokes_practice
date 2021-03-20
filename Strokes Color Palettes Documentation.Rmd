@@ -2,14 +2,14 @@
 title: "Strokes Color Palette Documentation"
 author: "Anisha Datta"
 date: "3/19/2021"
-output: html_document
+output: rmarkdown::github_document
 
 ```{r, EVAL=TRUE}
 library(ggplot2)
 library(tidyverse)
 ```
 
-
+# Creating the colors
 ```{r, EVAL=TRUE}
 
 strokes_colors <- c(
@@ -85,10 +85,7 @@ strokes_cols <- function(...) {
 
 ```
 
-```{r, EVAL=TRUE}
-#strokes_cols()
-```
-
+# Creating the palettes
 ```{r, EVAL=TRUE}
 strokes_palettes<- list (
   
@@ -120,11 +117,6 @@ strokes_pal <- function(palette = "is this it", reverse = FALSE, ...) {
 }
 ```
 
-```{r, EVAL=TRUE}
-#strokes_pal ("is this it")(10)
-
-```
-
 
 
 ```{r, EVAL=TRUE}
@@ -154,7 +146,7 @@ scale_fill_strokes <- function(palette = "is this it", discrete = TRUE, reverse 
 ```
 
 
-##View "is this it" colors by hex number 
+## View "is this it" colors by hex number 
 ```{r, EVAL=TRUE}
 strokes_palettes[["is this it"]] %>%
   tibble(x=.) %>%
@@ -169,7 +161,7 @@ strokes_palettes[["is this it"]] %>%
         panel.grid = element_blank())
 ```
 
-###function to visualize palette
+## Function to visualize palette
 ```{r, EVAL=TRUE}
 viz_palette <- function(pal, ttl = deparse(substitute(pal)), num = length(pal)) {
     if(num <= 0)
