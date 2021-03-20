@@ -19,6 +19,38 @@ library(tidyverse)
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
+# The Albums
+
+## Is This It 
+
+![Is This It good](https://user-images.githubusercontent.com/80598708/111858543-48469780-8910-11eb-88e1-b70f390c3e49.jpeg)
+
+## Room On Fire
+
+![Room on Fire](https://user-images.githubusercontent.com/80598708/111858418-31537580-890f-11eb-80a2-6cd3ecb3c359.jpeg)
+
+## First Impressions of Earth 
+
+![First Impressions of Earth](https://user-images.githubusercontent.com/80598708/111858425-46c89f80-890f-11eb-8dd0-bbca9e36d951.jpeg)
+
+## Angles 
+
+![Angles](https://user-images.githubusercontent.com/80598708/111858432-6364d780-890f-11eb-8fcb-7d0ef4f9067f.jpeg)
+
+## Comedown Machine
+
+![The_Strokes_-_Comedown_Machine](https://user-images.githubusercontent.com/80598708/111858615-bb500e00-8910-11eb-9852-48c71fdedd89.jpeg)
+
+## Future Past Present 
+
+![The-Strokes-Future-Present-Past-EP](https://user-images.githubusercontent.com/80598708/111858597-99ef2200-8910-11eb-9fbe-e4fe63b1bbf6.jpeg)
+
+## The New Abnormal
+
+![The New Abnormal](https://user-images.githubusercontent.com/80598708/111858466-b474cb80-890f-11eb-8540-48e856ecbb79.png)
+
+
+
 # Creating the colors
 
 ``` r
